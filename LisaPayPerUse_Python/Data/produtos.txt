@@ -1,4 +1,5 @@
-PRODUCT_ID|NOME|PREÇO|TIPO|MARCA|DESCRICAO
+PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
+000|DUMMY|DUMMY|DUMMY|DUMMY|DUMMY
 001|Maçã|0,99/kg|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 002|Banana|0,80/kg|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 003|Pêra|1,04/kg|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
@@ -13,4 +14,6 @@ PRODUCT_ID|NOME|PREÇO|TIPO|MARCA|DESCRICAO
 012|Consola PS4 Pro 1TB Preta|399,99|Consola Gaming|Sony|A PS4 Pro incorpora a última tecnologia para experiências de jogo mais rápidas, nítidas e de maior capacidade de resposta. 
 013|Consola NINTENDO Switch Cinzenta|299,00|Consola Gaming|Nintendo|A Nintendo Switch é uma revolucionária consola doméstica que pode ser ligada a uma TV em casa, mas que pode imediatamente transformar-se numa consola portátil com um ecrã de 6,2 polegadas.
 014|Comando PS4 Dualshock Sunset Orange|65,99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
+015|Esparguete Integral 1kg|0,99|Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
+016|Arroz de Marisco 200g|4,99|Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
 999|ERROR
