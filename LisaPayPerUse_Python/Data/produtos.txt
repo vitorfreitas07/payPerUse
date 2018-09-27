@@ -34,5 +34,5 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 033|Oregãos|0.9|Condimentos|Liza Condimentos|Oregão directamente importados do Zangzolbuje (Tamíria), aprovados pela qualidade Liza.
 034|Tomilho|0.9|Condimentos|Liza Condimentos|Tomilho directamente importado de Alferces do Ramalhal (Góis), aprovado pela qualidade Liza.
 035|Picanha|4.5|Talho e Charcutaria|Talho Liza|Carne importada do Brazil, aprovada pela qualidade Liza.
-036|Mustarda com Mel|3.25|Molhengas|Super Molhos|Molho para grelhados e saladas.
+036|Mostarda com Mel|3.25|Molhengas|Super Molhos|Molho para grelhados e saladas.
 
