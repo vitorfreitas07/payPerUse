@@ -1,17 +1,17 @@
-PRODUCT_ID|NAME|PRICE|RENT_PRICE|TYPE|BRAND|DESCRIPTION
-001|Maçã|0.99||Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
-002|Banana|0.80||Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
-003|Pêra|1.04||Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
-004|Abacate|4.50||Fruta|Sombreros Arriba|Importados diretamente do México, estes abacates são a escolha do consumidor.
-005|Febras de Porco|3.00||Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
-006|Frango|4.00||Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
-007|Entrecosto|4.00||Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
-008|XM-300|40.00|5.00|Eletrodoméstico|Samsung|Com o XM-300 consegue fazer todo o tipo de batidos deliciosos para toda a família.
-009|LIMPEX-7000|120.00|10.00|Eletrodoméstico|Twin Wash|O LIMPEX-7000 vai deixar a sua roupa tão lavada que até vai ter pena de a sujar.
-010|Action Cam GOPRO Hero 5 Preto|329.99|8.99|Action Cam|GOPRO|A action cam Hero 5 é a GoPro mais fácil de usar e mais poderosa. Capaz de gravar em 4K, assegura gravação vídeo estável, áudio claro e transparente, e qualidade de imagem profissional combinada com GPS. 
-011|Action Cam GOPRO Hero 4|287.00|6.99|Action Cam|GOPRO|A GoPro Hero 4 oferece conectividade melhorada para controlo remoto, ver fotos e vídeos, e partilhar.
-012|Consola PS4 Pro 1TB Preta|399.99|6.99|Consola Gaming|Sony|A PS4 Pro incorpora a última tecnologia para experiências de jogo mais rápidas, nítidas e de maior capacidade de resposta. 
-013|Consola NINTENDO Switch Cinzenta|299.00|5.99|Consola Gaming|Nintendo|A Nintendo Switch é uma revolucionária consola doméstica que pode ser ligada a uma TV em casa, mas que pode imediatamente transformar-se numa consola portátil com um ecrã de 6,2 polegadas.
-014|Comando PS4 Dualshock Sunset Orange|65.99|3.99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
-015|Esparguete Integral 1kg|0.99||Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
-016|Arroz de Marisco 200g|4.99||Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
+PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
+001|Maçã|0.99|Fruta|Frutos Lisa|          Cultivados em solo português, os melhores frutos estão na Lisa!
+002|Banana|0.80|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
+003|Pêra|1.04|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
+004|Abacate|4.50|Fruta|Sombreros Arriba|Importados diretamente do México, estes abacates são a escolha do consumidor.
+005|Febras de Porco|3.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
+006|Frango|4.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
+007|Entrecosto|4.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
+008|XM-300|40.00|Eletrodoméstico|Samsung|Com o XM-300 consegue fazer todo o tipo de batidos deliciosos para toda a família.
+009|LIMPEX-7000|120.00|Eletrodoméstico|Twin Wash|O LIMPEX-7000 vai deixar a sua roupa tão lavada que até vai ter pena de a sujar.
+010|Action Cam GOPRO Hero 5 Preto|329.99|Action Cam|GOPRO|A action cam Hero 5 é a GoPro mais fácil de usar e mais poderosa. Capaz de gravar em 4K, assegura gravação vídeo estável, áudio claro e transparente, e qualidade de imagem profissional combinada com GPS. 
+011|Action Cam GOPRO Hero 4|287.00|Action Cam|GOPRO|A GoPro Hero 4 oferece conectividade melhorada para controlo remoto, ver fotos e vídeos, e partilhar.
+012|Consola PS4 Pro 1TB Preta|399.99|Consola Gaming|Sony|A PS4 Pro incorpora a última tecnologia para experiências de jogo mais rápidas, nítidas e de maior capacidade de resposta. 
+013|Consola NINTENDO Switch Cinzenta|299.00|Consola Gaming|Nintendo|A Nintendo Switch é uma revolucionária consola doméstica que pode ser ligada a uma TV em casa, mas que pode imediatamente transformar-se numa consola portátil com um ecrã de 6,2 polegadas.
+014|Comando PS4 Dualshock Sunset Orange|65.99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
+015|Esparguete Integral 1kg|0.99|Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
+016|Arroz de Marisco 200g|4.99|Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
