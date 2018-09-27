@@ -3,9 +3,9 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 002|Banana|0.80|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 003|Pêra|1.04|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 004|Abacate|4.50|Fruta|Sombreros Arriba|Importados diretamente do México, estes abacates são a escolha do consumidor.
-005|Febras de Porco|3.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
-006|Frango|4.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
-007|Entrecosto|4.00|Carne|Talho Lisa|Carne 100% portuguesa e autenticada.
+005|Febras de Porco|3.00|Talho e Charcutaria|Talho Lisa|Carne 100% portuguesa e autenticada.
+006|Frango|4.00|Talho e Charcutaria|Talho Lisa|Carne 100% portuguesa e autenticada.
+007|Entrecosto|4.00|Talho e Charcutaria|Talho Lisa|Carne 100% portuguesa e autenticada.
 008|XM-300|40.00|Eletrodoméstico|Samsung|Com o XM-300 consegue fazer todo o tipo de batidos deliciosos para toda a família.
 009|LIMPEX-7000|120.00|Eletrodoméstico|Twin Wash|O LIMPEX-7000 vai deixar a sua roupa tão lavada que até vai ter pena de a sujar.
 010|Action Cam GOPRO Hero 5 Preto|329.99|Action Cam|GOPRO|A action cam Hero 5 é a GoPro mais fácil de usar e mais poderosa. Capaz de gravar em 4K, assegura gravação vídeo estável, áudio claro e transparente, e qualidade de imagem profissional combinada com GPS. 
@@ -15,14 +15,24 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 014|Comando PS4 Dualshock Sunset Orange|65.99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
 015|Esparguete Integral 1kg|0.99|Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
 016|Arroz de Marisco 200g|4.99|Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
-017|Àgua s/ gás 1L|0.25|Bebidas|Luso|Àgua Mineral sem gás
-018|Àgua c/gás 0.33L|0.25|Bebidas|Àgua das Pedras|Àgua Mineral sem gás
-019|Coca-Cola 1L|0.9|Bebidas|Coca-Cola|Refrigarente açucarado com gás
-020|Coca-Cola 0.5L|0.5|Bebidas|Coca-Cola|Refrigarente açucarado com gás
-021|Coca-Cola 0.33L|0.3|Bebidas|Coca-Cola|Refrigarente açucarado com gás
-022|Leite Gordo 1L|0.5|Laticíneos|Matinal|Leite de vaca gordo ultrapasteurizado
-023|Leite Maio-Gordo 1L|0.5|Laticíneos|Matinal|Leite de vaca meio-gordo ultrapasteurizado
-024|Leite Magro 1L|0.5|Laticíneos|Matinal|Leite de vaca magro ultrapasteurizado
-025|Manteiga|0.7|Laticíneos|Mimosa|Manteiga para barrar com sal
-026|Manteiga Magra|0.83|Laticíneos|Mimosa|Manteiga magra para barrar
+017|Àgua s/ gás 1L|0.25|Bebidas|Luso|Àgua Mineral sem gás.
+018|Àgua c/gás 0.33L|0.25|Bebidas|Àgua das Pedras|Àgua Mineral sem gás.
+019|Coca-Cola 1L|0.9|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
+020|Coca-Cola 0.5L|0.5|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
+021|Coca-Cola 0.33L|0.3|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
+022|Leite Gordo 1L|0.5|Laticínios|Matinal|Leite de vaca gordo ultrapasteurizado.
+023|Leite Maio-Gordo 1L|0.5|Laticíieos|Matinal|Leite de vaca meio-gordo ultrapasteurizado.
+024|Leite Magro 1L|0.5|Laticínios|Matinal|Leite de vaca magro ultrapasteurizado.
+025|Manteiga|0.7|Laticínios|Mimosa|Manteiga para barrar com sal.
+026|Manteiga Magra|0.83|Laticíneos|Mimosa|Manteiga magra para barrar.
+027|Fiambre de Porco|1.25|Talho e Charcutaria|Nobre|Fiambre de porco 100% portuguesa.
+028|Fiambre de Frango|1.45|Talho e Charcutaria|Nobre|Fiambre de frango 100% portuguesa.
+029|Fiambre de Perú|1.55|Talho e Charcutaria|Nobre|Fiambre de perú 100% portuguesa.
+030|Queijo Fatiado|1.00|Laticínios|Flamengo|Queijo Flamengo Fatiado.
+031|Pimenta|0.6|Condimentos|Liza Condimentos|Pimenta importada dos melhores produtores turcos, aprovada pela qualidade Liza.
+032|Sal|0.8|Condimentos|Liza Condimentos|Sal produzido nas salinas do rio Tejo, aprovado pela qualidade Liza.
+033|Oregãos|0.9|Condimentos|Liza Condimentos|Oregão directamente importados do Zangzolbuje (Tamíria), aprovados pela qualidade Liza.
+034|Tomilho|0.9|Condimentos|Liza Condimentos|Tomilho directamente importado de Alferces do Ramalhal (Góis), aprovado pela qualidade Liza.
+035|Picanha|4.5|Talho e Charcutaria|Talho Liza|Carne importada do Brazil, aprovada pela qualidade Liza.
+036|Mustarda com Mel|3.25|Molhengas|Super Molhos|Molho para grelhados e saladas.
 
