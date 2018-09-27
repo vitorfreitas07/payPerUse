@@ -1,5 +1,5 @@
 PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
-001|Maçã|0.99|Fruta|Frutos Lisa|          Cultivados em solo português, os melhores frutos estão na Lisa!
+001|Maçã|0.99|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 002|Banana|0.80|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 003|Pêra|1.04|Fruta|Frutos Lisa|Cultivados em solo português, os melhores frutos estão na Lisa!
 004|Abacate|4.50|Fruta|Sombreros Arriba|Importados diretamente do México, estes abacates são a escolha do consumidor.
@@ -15,3 +15,14 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 014|Comando PS4 Dualshock Sunset Orange|65.99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
 015|Esparguete Integral 1kg|0.99|Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
 016|Arroz de Marisco 200g|4.99|Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
+017|Àgua s/ gás 1L|0.25|Bebidas|Luso|Àgua Mineral sem gás
+018|Àgua c/gás 0.33L|0.25|Bebidas|Àgua das Pedras|Àgua Mineral sem gás
+019|Coca-Cola 1L|0.9|Bebidas|Coca-Cola|Refrigarente açucarado com gás
+020|Coca-Cola 0.5L|0.5|Bebidas|Coca-Cola|Refrigarente açucarado com gás
+021|Coca-Cola 0.33L|0.3|Bebidas|Coca-Cola|Refrigarente açucarado com gás
+022|Leite Gordo 1L|0.5|Laticíneos|Matinal|Leite de vaca gordo ultrapasteurizado
+023|Leite Maio-Gordo 1L|0.5|Laticíneos|Matinal|Leite de vaca meio-gordo ultrapasteurizado
+024|Leite Magro 1L|0.5|Laticíneos|Matinal|Leite de vaca magro ultrapasteurizado
+025|Manteiga|0.7|Laticíneos|Mimosa|Manteiga para barrar com sal
+026|Manteiga Magra|0.83|Laticíneos|Mimosa|Manteiga magra para barrar
+
