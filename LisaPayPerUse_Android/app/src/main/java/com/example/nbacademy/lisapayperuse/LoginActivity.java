@@ -142,9 +142,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
+            Bundle sendBundle = new Bundle();
+            sendBundle.putString("email", email);
+
             mAuthTask = new UserLoginTask(email, password);
             Intent myIntent = new Intent(LoginActivity.this, LisaShop.class);
-            myIntent.putExtra("key", "value"); //Optional parameters
+            myIntent.putExtras(sendBundle); //Optional parameters
             startActivity(myIntent);
         }
     }
