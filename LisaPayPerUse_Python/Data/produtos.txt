@@ -15,8 +15,8 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 014|Comando PS4 Dualshock Sunset Orange|65.99|Acessórios Gaming|Sony|Um comando com uma cor irreverente para a tua consola PS4.
 015|Esparguete Integral 1kg|0.99|Massa e Arroz|Lisa Alimentos|Ideal para os seus cozinhados!
 016|Arroz de Marisco 200g|4.99|Pré-feitos|Lisa Alimentos|O arroz de marisco nunca foi tão bom, momentos de prazer com a Lisa.
-017|Àgua s/ gás 1L|0.25|Bebidas|Luso|Àgua Mineral sem gás.
-018|Àgua c/gás 0.33L|0.25|Bebidas|Àgua das Pedras|Àgua Mineral sem gás.
+017|Água s/ gás 1L|0.25|Bebidas|Luso|Água Mineral sem gás.
+018|Água c/gás 0.33L|0.25|Bebidas|Àgua das Pedras|Água Mineral sem gás.
 019|Coca-Cola 1L|0.9|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
 020|Coca-Cola 0.5L|0.5|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
 021|Coca-Cola 0.33L|0.3|Bebidas|Coca-Cola|Refrigarente açucarado com gás.
@@ -28,11 +28,32 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 027|Fiambre de Porco|1.25|Talho e Charcutaria|Nobre|Fiambre de porco 100% portuguesa.
 028|Fiambre de Frango|1.45|Talho e Charcutaria|Nobre|Fiambre de frango 100% portuguesa.
 029|Fiambre de Perú|1.55|Talho e Charcutaria|Nobre|Fiambre de perú 100% portuguesa.
-030|Queijo Fatiado|1.00|Laticínios|Flamengo|Queijo Flamengo Fatiado.
-031|Pimenta|0.6|Condimentos|Liza Condimentos|Pimenta importada dos melhores produtores turcos, aprovada pela qualidade Liza.
-032|Sal|0.8|Condimentos|Liza Condimentos|Sal produzido nas salinas do rio Tejo, aprovado pela qualidade Liza.
-033|Oregãos|0.9|Condimentos|Liza Condimentos|Oregão directamente importados do Zangzolbuje (Tamíria), aprovados pela qualidade Liza.
-034|Tomilho|0.9|Condimentos|Liza Condimentos|Tomilho directamente importado de Alferces do Ramalhal (Góis), aprovado pela qualidade Liza.
-035|Picanha|4.5|Talho e Charcutaria|Talho Liza|Carne importada do Brazil, aprovada pela qualidade Liza.
-036|Mostarda com Mel|3.25|Molhengas|Super Molhos|Molho para grelhados e saladas.
+030|Queijo Fatiado|1.00|Laticínios|Flamengo|Queijo Flamengo fatiado.
+031|Pimenta|0.6|Condimentos|Lisa Condimentos|Pimenta importada dos melhores produtores turcos, aprovada pela qualidade Lisa.
+032|Sal|0.8|Condimentos|Lisa Condimentos|Sal produzido nas salinas do rio Tejo, aprovado pela qualidade Lisa.
+033|Oregãos|0.9|Condimentos|Lisa Condimentos|Oregão directamente importados do Zangzolbuje (Tamíria), aprovados pela qualidade Lisa.
+034|Tomilho|0.9|Condimentos|Lisa Condimentos|Tomilho directamente importado de Alferces do Ramalhal (Góis), aprovado pela qualidade Lisa.
+035|Picanha|4.5|Talho e Charcutaria|Talho Lisa|Carne importada do Brazil, aprovada pela qualidade Liza.
+036|Arroz Agulha 1kg|0.6|Massa e Arroz|Cigala|Arroz para confecionar deliciosos pratos
+037|Arroz Basmati 1kg|0.8|Massa e Arroz|Cigala|Arroz para confecionar deliciosos pratos
+038|Penne 1kg|1.2|Massa e Arroz|Lisa Alimentos|Massa ideal para cozinha italiana
+039|Mantegia de amendoim 1kg|7|Dietética|Prozis|Cremoso e 100% natural
+040|Peixe espada|8|Peixaria|Peixaria Lisa|Este peixe não tem de facto uma espada
+041|Salmão|20|300|Peixaria|Peixaria Lisa|Fonte de OMEGA-3
+042|Grão de bico|1.2|Legumes e Leguminosas|Legumes Lisa|Grão ideal para um bom almoço à Ribatejano
+043|Couves|0.5|Legumes e Leguminosas|Legumes Lisa|Couves para um caldo verde ou outra coisa qualquer
+044|Bróculos|0.5|Legumes e Leguminosas|Legumes Lisa|Para pessoas saudáveis
+045|Cenouras|0.7|Legumes e Leguminosas|Legumes Lisa|Cenouras para uns lindos olhos
+046|Bolachas de chocolate 300g|1.5|Doces|Oreo|Para adoçar a sua vida
+047|Bolachas de chocolate branco 300g|1.7|Doces|Oreo|Para adoçar a sua vida
+048|Pensos higiénicos 20 unidades|5|Higiene|Nivea|Para a higiene da senhora ou quiçá até do senhor
+049|Champô cheiro a maracujá 70cl|1.4|Higiene|Higiene Lisa|Este champô tem cheiro a maracujá
+050|Gel de banho Rosas Milagrosas 90cl|1.5|Higiene|Higiene Lisa|Este gel de banho é mágico
+
+
+
+
+
+
+
 
