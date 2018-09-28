@@ -52,8 +52,7 @@ public class LisaShop extends AppCompatActivity
         Bundle receivedBundle = this.getIntent().getExtras();
         String email = receivedBundle.getString("email"); //if it's a string you stored.
 
-
-        ((TextView)navigationView.getHeaderView(0).findViewById(R.id.MenuTextView)).setText(email);
+        ((TextView)navigationView.getHeaderView(0).findViewById(R.id.MenuUser2TextView)).setText(email);
 
     }
 
