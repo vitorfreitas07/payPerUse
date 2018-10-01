@@ -39,7 +39,7 @@ PRODUCT_ID|NAME|PRICE|TYPE|BRAND|DESCRIPTION
 038|Penne 1kg|1.2|Massa e Arroz|Lisa Alimentos|Massa ideal para cozinha italiana
 039|Mantegia de amendoim 1kg|7|Dietética|Prozis|Cremoso e 100% natural
 040|Peixe espada|8|Peixaria|Peixaria Lisa|Este peixe não tem de facto uma espada
-041|Salmão|20|300|Peixaria|Peixaria Lisa|Fonte de OMEGA-3
+041|Salmão|20|Peixaria|Peixaria Lisa|Fonte de OMEGA-3
 042|Grão de bico|1.2|Legumes e Leguminosas|Legumes Lisa|Grão ideal para um bom almoço à Ribatejano
 043|Couves|0.5|Legumes e Leguminosas|Legumes Lisa|Couves para um caldo verde ou outra coisa qualquer
 044|Bróculos|0.5|Legumes e Leguminosas|Legumes Lisa|Para pessoas saudáveis

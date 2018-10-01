@@ -29,6 +29,11 @@ def calculate_discount(price,quantity,discount):
     
 df_historico_completo['TOTAL_MONEY']=df_historico_completo.apply(lambda row: calculate_discount(row['PRICE'],row['QUANTITY'],row['DISCOUNT']),axis=1)
 
+df_clientes.to_csv('D:/NB24688/Desktop/clientes.csv',sep=';', encoding='utf-8')
+df_historico.to_csv('D:/NB24688/Desktop/historico.csv',sep=';', encoding='utf-8')
+df_products.to_csv('D:/NB24688/Desktop/products.csv',sep=';', encoding='utf-8')
+
+
 ##Possible Statistics and Graphs
 #
 ##Money spent per brand
