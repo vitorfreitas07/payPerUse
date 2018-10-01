@@ -59,9 +59,9 @@ HIST_ID|CLIENT_ID|PRODUCT_ID|DATE|QUANTITY|DISCOUNT|DISCOUNT_CAMPAIGN
 058|001|040|09/08/2018|1|
 059|001|046|15/08/2018|1|
 060|001|029|15/08/2018|1|
-061|001|044|15/08/2018|0.2|Campanha "Verão Saudável" 20% em Fruta e Legumes
-062|001|042|15/08/2018|0.2|Campanha "Verão Saudável" 20% em Fruta e Legumes
-063|001|001|15/08/2018|1|Campanha "Verão Saudável" 20% em Fruta e Legumes
+061|001|044|15/08/2018|1|0.2|Campanha "Verão Saudável" 20% em Fruta e Legumes
+062|001|042|15/08/2018|1|0.2|Campanha "Verão Saudável" 20% em Fruta e Legumes
+063|001|001|15/08/2018|1|0.2|Campanha "Verão Saudável" 20% em Fruta e Legumes
 064|001|041|28/08/2018|0.1|
 065|001|040|28/08/2018|0.2|
 066|001|019|28/08/2018|4|
