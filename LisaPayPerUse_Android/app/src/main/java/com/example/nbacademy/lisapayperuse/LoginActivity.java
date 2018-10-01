@@ -20,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,6 +33,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -90,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mRegisterButton = (Button) findViewById(R.id.register_button);
+        TextView mRegisterButton = (TextView) findViewById(R.id.register_button);
         mRegisterButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -121,7 +128,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        try {
+            Log.d("emailLoginActivity", email);
+            Log.d("emailLoginActivity", password);
 
+            email = URLEncoder.encode(email, "UTF-8");
+            URL url = new URL("192.168.90.182/login?" + email);
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+        } catch (Exception e){
+            //TODO
+        }
         boolean cancel = false;
         View focusView = null;
 
