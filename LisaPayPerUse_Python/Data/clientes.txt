@@ -1,2 +1,2 @@
-CLIENT_ID|NAME
-001|Manuel
+CLIENT_ID|NAME|EMAIL|PASSWORD|NIF
+001|Manuel|manuel@gmail.com|pass|234567887

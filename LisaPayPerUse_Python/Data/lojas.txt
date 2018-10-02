@@ -1,0 +1,2 @@
+ID_LOJA|NAME|LOCATION
+001|HyperLisa|Amadora
