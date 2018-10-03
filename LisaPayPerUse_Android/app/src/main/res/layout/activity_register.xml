@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/nif_camp"
+                    android:id="@+id/nif_field"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/action_nif"

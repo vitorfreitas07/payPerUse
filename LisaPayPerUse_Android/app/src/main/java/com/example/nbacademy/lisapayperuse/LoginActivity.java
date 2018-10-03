@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             Log.d("emailLoginActivity", password);
 
             email = URLEncoder.encode(email, "UTF-8");
-            URL url = new URL("192.168.90.182/login?" + email);
+            URL url = new URL(R.string.ip+"/login?" + email);
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         } catch (Exception e){
             //TODO

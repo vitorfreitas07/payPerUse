@@ -58,6 +58,8 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
     private View mProgressView;
     private View mLoginFormView;
     private TextView regClickString;
+    private EditText mPasswordViewConfirm;
+    private EditText mNIF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,18 +67,9 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
-
         mPasswordView = (EditText) findViewById(R.id.password);
-        mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == EditorInfo.IME_ACTION_DONE || id == EditorInfo.IME_NULL) {
-                    attemptLogin();
-                    return true;
-                }
-                return false;
-            }
-        });
+        mPasswordViewConfirm = (EditText) findViewById(R.id.password_confirm);
+        mNIF = (EditText) findViewById(R.id.nif_field);
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
@@ -91,7 +84,7 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
 
             @Override
             public boolean onTouch(View arg0, MotionEvent arg1) {
-                Intent myIntent = new Intent(RegisterActivity.this, LisaShop.class);
+                Intent myIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(myIntent);
                 return false;
             }
@@ -115,16 +108,19 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         // Reset errors.
         mEmailView.setError(null);
         mPasswordView.setError(null);
+        mPasswordViewConfirm.setError(null);
 
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        String pwdConfirm = mPasswordViewConfirm.getText().toString();
+        String nif = mNIF.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+        if (!TextUtils.isEmpty(password) && !isPasswordValid(password, pwdConfirm)) {
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
@@ -164,10 +160,18 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         return email.contains("@");
     }
 
-    private boolean isPasswordValid(String password) {
+    private boolean isPasswordValid(String password, String pwdConfirm) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        if(password.equals(pwdConfirm)){
+            if(password.length() > 4){
+                return true;
+            }
+        }else {
+            mPasswordViewConfirm.setError(getString(R.string.error_pwd_nomatch));
+        }
+        return false;
     }
+
 
     /**
      * Shows the progress UI and hides the login form.
