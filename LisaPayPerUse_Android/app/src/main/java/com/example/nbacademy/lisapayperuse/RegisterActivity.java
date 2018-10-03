@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -27,6 +28,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -134,6 +138,27 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
             cancel = true;
         }
 
+        if (!isNIFValid(nif)){
+            mNIF.setError(getString(R.string.error_invalid_nif));
+            focusView = mNIF;
+            cancel=true;
+        }
+        //connection to server and requests
+        //TODO - Receive: GET (REQUESTS)
+        try {
+            email = URLEncoder.encode(email, "UTF-8");
+            password = URLEncoder.encode(password, "UTF-8");
+            URL url = new URL(R.string.ip + "/register?" + email+"&"+password);
+            if (nif!=null){
+                nif = URLEncoder.encode(nif, "UTF-8");
+                url = new URL(R.string.ip + "/register?" + email+"&"+password+"&"+nif);
+            }
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+            Log.d("REGISTER_Connection:","Success");
+        }catch (Exception e){
+            Log.d("REGISTER_Connection:","ERROR");
+        }
+
         if (cancel) {
             // There was an error; don't attempt login and focus the first
             // form field with an error.
@@ -150,6 +175,10 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
             myIntent.putExtras(sendBundle); //Optional parameters
             startActivity(myIntent);
         }
+    }
+
+    private boolean isNIFValid(String nif) {
+        return nif.length()==9;
     }
 
     private boolean isEmailValid(String email) {
