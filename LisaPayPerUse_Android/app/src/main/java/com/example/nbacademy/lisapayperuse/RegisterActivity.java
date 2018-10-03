@@ -57,14 +57,13 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-    private TextView regClickString;
     private EditText mPasswordViewConfirm;
     private EditText mNIF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         mPasswordView = (EditText) findViewById(R.id.password);
@@ -79,14 +78,12 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
             }
         });
 
-        regClickString = (TextView) findViewById(R.id.reg_text);
-        regClickString.setOnTouchListener(new View.OnTouchListener() {
-
+        TextView mRegisterButton = (TextView) findViewById(R.id.Login_button);
+        mRegisterButton.setOnClickListener(new OnClickListener() {
             @Override
-            public boolean onTouch(View arg0, MotionEvent arg1) {
+            public void onClick(View view) {
                 Intent myIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(myIntent);
-                return false;
             }
         });
 
