@@ -26,4 +26,9 @@
     <string name="action_settings">Settings</string>
     <string name="error_pwd_nomatch">Palavras chave não coincidem</string>
     <string name="error_invalid_nif">NIF com comprimento inválido</string>
+    <string name="action_skip">Saltar</string>
+    <string name="action_add_cc">Adicionar Cartão</string>
+    <string name="prompt_numero_cc">Número Cartao de Crédito</string>
+    <string name="prompt_validade">Validade (ex. 01-01-2100)</string>
+    <string name="prompt_cvc">CVC</string>
 </resources>
