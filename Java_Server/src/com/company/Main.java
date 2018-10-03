@@ -1,9 +1,12 @@
+package com.company;
+
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +20,14 @@ public class Main {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8004),0);
         server.createContext("/login", new loginHandler());
+        server.createContext("/register", new registerHandler());
+
+        //addClient("joao", "lolada", "1234567");
+        //System.out.println("joao" + " has registered in the system!");
+
 
         String result = "";
-
+        //listProducts();
 
         server.setExecutor(null); // creates a default executor
         server.start();
@@ -46,10 +54,24 @@ public class Main {
 
     }
 
+    static class registerHandler implements HttpHandler {
+        // Handle incoming calls in threads
+
+        @Override
+
+        public void handle(HttpExchange t) throws IOException {
+
+            Thread thread = new registerThread(t);
+
+            thread.start();
+
+        }
+
+    }
+
 
 
     static class loginThread extends Thread
-
     {
 
         private String username, password;
@@ -73,28 +95,29 @@ public class Main {
 
             if(query != null)
             {
-                System.out.println(query);
-                //String[] parts = query.split("&");
-                //username = parts[0];
-                //password = parts[1];
+                //System.out.println(query);
+                String[] parts = query.split("&");
+                username = parts[0];
+                password = parts[1];
             }
         }
 
         @Override
         public void run()
         {
-            System.out.println("Foi ao run");
-            /*String response;
+            //System.out.println("Foi ao run");
+            String response;
             if(query != null){
                 try {
-                    if(true) //verifyClient(username,password)>0
+                    if(verifyClient(username,password)>0) //
                     {
                         response = "1";
-                        System.out.println(username + " has logged in to the system!");
+                        System.out.println(username + " has logged in in the system!");
                         response = URLEncoder.encode(response, "UTF-8");
                     }
                     else
                     {
+                        System.out.println(username + " has failed to login in the system!");
                         response = "0";
                         response = URLEncoder.encode(response, "UTF-8");
                     }
@@ -106,9 +129,88 @@ public class Main {
                 {
                     e.printStackTrace();
                 }
-            }*/
+            }
         }
     }
+
+
+
+
+    static class registerThread extends Thread
+
+    {
+
+        private String username, password, nif;
+        private HttpExchange t;
+        private String query;
+
+        public registerThread(HttpExchange t)
+        {
+            //System.out.println("teste1");
+            this.t = t;
+            query = t.getRequestURI().getQuery();
+            try
+            {
+                query = URLDecoder.decode(query, "UTF-8");
+            }
+            catch(UnsupportedEncodingException e)
+            {
+                throw new IllegalStateException("Unsupported Encoding exception: ", e);
+            }
+
+
+            if(query != null)
+            {
+                //System.out.println(query);
+                String[] parts = query.split("&");
+                if(parts.length == 2) {
+                    username = parts[0];
+                    password = parts[1];
+                }
+                else{
+                    if(parts.length == 3){
+                        username = parts[0];
+                        password = parts[1];
+                        nif = parts[2];
+                    }
+                }
+            }
+        }
+
+        @Override
+        public void run()
+        {
+            //System.out.println("Foi ao run");
+            String response;
+            if(query != null){
+                try {
+                    if(verifyClient(username,password)>0) // O cliente já existe!
+                    {
+                        response = "0";
+                        System.out.println(username + " is already registered in the system!");
+                        response = URLEncoder.encode(response, "UTF-8");
+                    }
+                    else
+                    {
+                        addClient(username, password, nif);
+                        System.out.println(username + " has registered in the system!");
+                        response = "1";
+                        response = URLEncoder.encode(response, "UTF-8");
+                    }
+                    t.sendResponseHeaders(200, response.length());
+                    OutputStream os = t.getResponseBody();
+                    os.write(response.getBytes());
+                    os.close();
+                } catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
+
 
     public static int verifyClient(String username, String password)
     {
@@ -127,7 +229,7 @@ public class Main {
             // Verify if client exists
             while(rs.next()){
                 result = rs.getInt("num");
-                System.out.println(result);
+                //System.out.println(result);
             }
 
             st.close();
@@ -143,6 +245,33 @@ public class Main {
             throw new IllegalStateException("Database exception: ", e);
         }
         return 0;
+    }
+
+    // Check if the client exists and if the username and password pair matches
+
+    public static void addClient(String username, String password, String nif)
+    {
+        int result = 0;
+        try
+        {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/academydb", "root", "");
+            // Verify if user already exists
+            String query = "INSERT INTO `clientes`(`name`, `password`, `nif`) VALUES ('"+username+"','"+password+"','"+nif+"')";
+
+
+            // create the java statement
+            Statement st = connection.createStatement();
+
+            // execute the query, and get a java resultset
+            st.executeUpdate(query);
+
+            st.close();
+            connection.close();
+        }
+        catch (SQLException e)
+        {
+            throw new IllegalStateException("Database exception: ", e);
+        }
     }
 
 
@@ -162,6 +291,7 @@ public class Main {
             // execute the query, and get a java resultset
             ResultSet rs = st.executeQuery(query);
 
+
             // Verify if client exists
             while(rs.next()){
                 names.add(rs.getString("name"));
@@ -174,8 +304,8 @@ public class Main {
 
             if(!names.isEmpty())
             {
-                for(String name: names ){
-                    //System.out.println(name);
+                for(int i = 0; i < names.size();i++){
+                    //System.out.println(names.get(i)+" "+prices.get(i));
                 }
                 return 1;
             }
