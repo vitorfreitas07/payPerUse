@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -11,3 +12,20 @@ Log.d("BlackListActivity", str);
 str = URLEncoder.encode(str,"UTF-8");
 URL url = new URL(getResources().getString(R.string.serverip)+"/addblacklistmessage?"+str);
 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+
+
+
+
+
+                        Log.v("BlackListActivity", response);
+
+                        // Save the response from the server
+
+                        Log.v("BlackListActivity", "3");
+
+                        for (String line; (line = in.readLine()) != null; response += line) ;
+
+                        Log.v("BlackListActivity", response);
+
+                        response = URLDecoder.decode(response, "UTF-8");
